@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'proder',
-    tagline: '回首向往萧瑟处，也无风雨也无晴',
+    tagline: '回首向往萧瑟处，也无风雨也无晴。',
     favicon: 'img/favicon.ico',
 
     // Set the production url of your site here
@@ -102,6 +102,11 @@ const config = {
                         label: '👨🏻‍🌾生活📽️',
                         position: 'left',
                     },
+                    {
+                        to: '/map/',
+                        label: '👨map📽️',
+                        position: 'left',
+                    },
                     {to: '/blog', label: 'Blog', position: 'left'},
                     {
                         href: 'https://github.com/facebook/docusaurus',
@@ -159,9 +164,13 @@ const config = {
                 theme: lightCodeTheme,
                 darkTheme: darkCodeTheme,
             },
+            algolia: {
+                apiKey: "***********",
+                appId: "***********",
+                indexName: "*****",
+            },
         }),
     titleDelimiter: '🦖', // 默认为 `|`
-
     themes: [
         [
             "@easyops-cn/docusaurus-search-local", {
@@ -180,7 +189,12 @@ const config = {
                  }),*/
         ],
     ],
-    plugins: ['docusaurus-plugin-sass'],
+    plugins: [
+        'docusaurus-plugin-sass',
+    ],
+    customFields:{
+            mapKey:'a7d73805ca421c6d2ab04fb4327e4f77', // 高德地图key
+            mapSecretKey:"ab8a27da8b1b63c938177bde934a624d" //高德地图安全密钥
+    }
 };
-
 module.exports = config;

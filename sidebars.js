@@ -23,7 +23,8 @@ const sidebars = {
       label: '运动',
       items: [
         'life/sport/sport',
-        'life/log'
+        'life/log',
+        'life/travel/WugongMountain'
       ],
     },
   ],
