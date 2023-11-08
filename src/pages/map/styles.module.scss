@@ -1,0 +1,29 @@
+.container{
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+
+  .amap-info{
+    .amap-info-contentContainer {
+      .amap-info-content {
+        background: #00BF98;
+      }
+    }
+  }
+  .amap-logo {
+    display: none !important;
+  }
+  .amap-copyright {
+    display: none !important;
+  }
+/*  .amap-copyright{
+    display: none !important;
+  }*/
+}
+
+.amap-logo {
+  display: none !important;
+}
+.amap-copyright {
+  display: none !important;
+}
