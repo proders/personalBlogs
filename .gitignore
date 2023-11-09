@@ -9,7 +9,9 @@ bin-release/
 /.docusaurus
 /.idea
 /build
-
+.github
+yarn.lock
+yarn-error.log
 # Other files and folders
 .settings/
 

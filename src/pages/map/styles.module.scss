@@ -4,6 +4,22 @@
   width: 100%;
 
   .amap-info{
+    .amap-info-contentContainer{
+      .amap-info-outer{
+        border-radius: 5%;
+      }
+      background: #00BF98;
+      opacity: 0.8;
+    }
+  }
+
+
+.amap-info-content{
+  background: #00BF98;
+}
+
+
+  .amap-info{
     .amap-info-contentContainer {
       .amap-info-content {
         background: #00BF98;
@@ -20,10 +36,7 @@
     display: none !important;
   }*/
 }
+.amap-info-content{
+  background: #00BF98;
+}
 
-.amap-logo {
-  display: none !important;
-}
-.amap-copyright {
-  display: none !important;
-}

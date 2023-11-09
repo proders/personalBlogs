@@ -2,7 +2,7 @@
  * 高德地圖
  */
 
-import React, {useEffect, useState} from "react"
+import React, {useEffect} from "react"
 import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
@@ -33,6 +33,7 @@ const TravelMap = () => {
        {id:'2', position:[106.494059,29.59269], title:'这是第二个mark',content:'内容-12',img:banner2},
        { id:'3' ,position:[106.552396,29.613392], title:'这是第三个mark',content:'内-------容',img: banner3},
    ]
+
 
     useEffect(() => {
         AMapLoader.load({
@@ -89,7 +90,7 @@ const TravelMap = () => {
             });
 
 
-            const markerClick = (e) => {
+            const markerClick = (e:any) => {
                 infoWindow.setContent(e.target.content);
                 infoWindow.open(map, e.target.getPosition());
             }
@@ -97,15 +98,19 @@ const TravelMap = () => {
             const addMarker = () => {
                 if(markList && markList.length){
 
-                    markList.map((key:markType,index:number)=>{
+                    markList.map((key:markType)=>{
                         const marker = new AMap.Marker({
                             map: map,
                             icon:redFlagMapIcon,
                             position: key.position
                         });
-                        // marker.content = key.content;
-                        marker.content = `<div style="padding-top:10px"> 
-                                           <img src=${key.img} alt={key.title} height="200px" width="300px" /> 
+                        // marker.content = renderInfoWindowContent(key).toString;
+                        marker.content = `<div style="position: relative;cursor: pointer">
+                                           <img src=${key.img} alt=${key.title} height="200px" width="300px" /> 
+                                           <div style="width: 100%;position: absolute;background: rgba(0,0,0,0.5);bottom: 0;
+                                           left: 0;display: inline-block;text-indent: 1rem;color: #ffffff;line-height: 34px;height: 34px;
+                                           font-size: 12px;text-align: center;
+                                           ">${key.title}</div>
                                          </div>`;
                         marker.on('click', markerClick);
                         marker.emit('click', {target: marker});
