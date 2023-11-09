@@ -12,7 +12,7 @@
         contents: write
       steps:
         - uses: actions/checkout@v2
-        - name: Use Node.js 16.15.0
+        - name: Use Node.js 18.18.0
           uses: actions/setup-node@v2
           with:
             node-version: "16.x"
