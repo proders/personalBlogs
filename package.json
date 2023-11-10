@@ -17,7 +17,6 @@
     "predeploy": "npm run build"
   },
   "dependencies": {
-    "@amap/amap-react": "^0.1.5",
     "@amap/amap-jsapi-loader": "^1.0.1",
     "@docusaurus/core": "2.4.1",
     "@docusaurus/preset-classic": "2.4.1",

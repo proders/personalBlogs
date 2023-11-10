@@ -33,11 +33,19 @@ const config = {
     //   defaultLocale: 'en',
     //   locales: ['en'],
     // },
-    i18n: {
-        defaultLocale: "zh-Hans",
-        locales: ["zh-Hans"],
-    },
 
+    i18n: {
+        defaultLocale: 'en',
+        locales: ['en', 'zh'],
+        localeConfigs: {
+            en: {
+                label: 'English',
+            },
+            zh: {
+                label: '简体中文',
+            },
+        },
+    },
     presets: [
         [
             'classic',
@@ -103,11 +111,11 @@ const config = {
                         position: 'left',
                     },
                     {
-                        to: '/map/',
+                        to: 'map',
                         label: '👨map📽️',
                         position: 'left',
                     },
-                    {to: '/blog', label: 'Blog', position: 'left'},
+                    {to: 'blog', label: 'Blog', position: 'left'},
                     {
                         href: 'https://github.com/facebook/docusaurus',
                         label: 'GitHub',

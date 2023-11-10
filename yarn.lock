@@ -138,10 +138,10 @@
     "@algolia/logger-common" "4.19.1"
     "@algolia/requester-common" "4.19.1"
 
-"@amap/amap-react@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@amap/amap-react/-/amap-react-0.1.5.tgz#217cd5ee583fc489a3b751028af4821802696c11"
-  integrity sha512-ZQQ2QaU2JthSXXsKwL7aOk61zs3iiMt6E+aDk28z6Z2do0nDeoK7+vdhFJIzNGRe39i+o6EELqjrYdE+6uEICw==
+"@amap/amap-jsapi-loader@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/@amap/amap-jsapi-loader/-/amap-jsapi-loader-1.0.1.tgz#9ec4b4d5d2467eac451f6c852e35db69e9f9f0c0"
+  integrity sha512-nPyLKt7Ow/ThHLkSvn2etQlUzqxmTVgK7bIgwdBRTg2HK5668oN7xVxkaiRe3YZEzGzfV2XgH5Jmu2T73ljejw==
 
 "@ampproject/remapping@^2.2.0":
   version "2.2.1"
