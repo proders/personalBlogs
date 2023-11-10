@@ -103,7 +103,7 @@ const config = {
                         position: 'left',
                     },
                     {
-                        to: '/map/',
+                        to: 'src/pages/map/',
                         label: '👨map📽️',
                         position: 'left',
                     },
