@@ -111,8 +111,8 @@ const config = {
                         position: 'left',
                     },
                     {
-                        to: 'map',
-                        label: '👨map📽️',
+                        to: 'TravelMap',
+                        label: '👨TravelMap📽️',
                         position: 'left',
                     },
                     {to: 'blog', label: 'Blog', position: 'left'},

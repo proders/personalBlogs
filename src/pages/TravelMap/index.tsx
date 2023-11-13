@@ -35,7 +35,7 @@ const TravelMap = () => {
    ]
 
 
-    useEffect(() => {
+/*    useEffect(() => {
         AMapLoader.load({
             // 这里提供你的高德地图 API Key
             key: siteConfig.customFields.mapKey, // 申请好的Web端开发者Key
@@ -125,7 +125,7 @@ const TravelMap = () => {
             // map?.destroy();
             // 这里可以在组件销毁时执行一些清理操作
         };
-    }, []);
+    }, []);*/
 
     return (
         <Layout>
@@ -133,9 +133,8 @@ const TravelMap = () => {
                 id="mapContainer"
                 className={styles.container}
                 style={{ height: '800px' }}
-            >
-
-            </div>
+            />
+            {/*</div>*/}
         </Layout>
     )
 
