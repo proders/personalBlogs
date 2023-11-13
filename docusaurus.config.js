@@ -111,8 +111,8 @@ const config = {
                         position: 'left',
                     },
                     {
-                        to: 'TravelMap',
-                        label: '👨TravelMap📽️',
+                        to: '/docs/log/2023-11',
+                        label: '日志📽️',
                         position: 'left',
                     },
                     {to: 'blog', label: 'Blog', position: 'left'},

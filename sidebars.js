@@ -23,7 +23,7 @@ const sidebars = {
       label: '运动',
       items: [
         'life/sport/sport',
-        'life/log',
+        // 'life/log',
         'life/travel/WugongMountain'
       ],
     },
@@ -37,7 +37,7 @@ const sidebars = {
         type: 'generated-index', // 引导页类型
         title: 'vue引导页', //名称
         description: '这是一个引导页面', //描述
-        slug: '/category/docusaurus-vue', //显示路径
+        slug: '/knowledgeStructure/docusaurus-vue', //显示路径
         keywords: ['guides'], //标签
       },
       items: [
@@ -47,6 +47,37 @@ const sidebars = {
       ],
     },
   ],
+  log:[
+    // 'logInfo',
+    {
+      type: 'category',
+      label: '2023-11',
+      link: {
+        type: 'generated-index', // 引导页类型
+        title: '2023-11', //名称
+        description: '2023-11总结', //描述
+        slug: '/log/2023-11', //显示路径
+        keywords: ['guides'], //标签
+      },
+      items: [
+        'log/2023-11/13',
+      ],
+    },
+    {
+      type: 'category',
+      label: '2023-12',
+      link: {
+        type: 'generated-index', // 引导页类型
+        title: '2023-12', //名称
+        description: '2023-12总结', //描述
+        slug: '/log/2023-12', //显示路径
+        keywords: ['guides'], //标签
+      },
+      items: [
+        'log/2023-12/12',
+      ],
+    },
+  ]
 };
 
 module.exports = sidebars;

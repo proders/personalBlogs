@@ -1,7 +1,7 @@
 /**
  * 打字效果
  * @Author: pgd
- * @Date: 2023-9-8
+ * @Date: 2023-11-9-8
  */
 import React, {useEffect} from "react";
 import styles from './index.module.css'
