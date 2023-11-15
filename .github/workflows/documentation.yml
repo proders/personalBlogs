@@ -1,4 +1,4 @@
-name: Deploy Arden Github pages
+name: Build HTML
 on:
   push:
     branches:
@@ -8,17 +8,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v3
+      
+      - name: Use Node 18
+        uses: actions/setup-node@v3
         with:
-          persist-credentials: false
-      - name: Install and Build
+          node-version: 18
+
+      - name: Build HTML
         run: |
-          npm install
-          npm run-script build
+          npm install 
+          npm run build
+      
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          GITHUBTOKEN: ${{ secrets.GITHUBTOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
-          BUILD_SCRIPT: npm install && npm run build
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: html
